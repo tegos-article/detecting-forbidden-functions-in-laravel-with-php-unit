@@ -41,8 +41,10 @@ Create test file at `tests/Unit/Architecture/ForbiddenFunctionTest.php` and add 
 
 1. **Define Forbidden Functions:** The test defines forbidden functions like `dd()`, `dump()`, `exit()`, `die()`, etc.
 2. **Scan PHP Files:** The test scans all PHP files in the Laravel `app/` directory recursively.
-3. **Check for Forbidden Functions:** The test uses regex to check for forbidden function calls and mark their locations.
-4. **Fail on Detection:** On detection of any forbidden function, the test fails, displaying the filename and line number
+3. **Check for Forbidden Functions:** The test uses regex to check for forbidden function calls and mark their
+   locations.
+4. **Fail on Detection:** On detection of any forbidden function, the test fails, displaying the filename and line
+   number
    where the function is located.
 
 ## Running the Test
@@ -57,10 +59,6 @@ If test fails it will output a message indicating the file and line number where
 allows you to quickly navigate to the relevant file in your IDE, such as PhpStorm, and make the necessary corrections.
 
 ![test result](assets/test-result.jpg)
-
-### Example Output
-
-![test output](assets/test-output.svg)
 
 ## Conclusion
 
