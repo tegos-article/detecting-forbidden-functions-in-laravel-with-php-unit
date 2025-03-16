@@ -33,7 +33,7 @@ directory and checking for forbidden function calls.
 
 Create test file at `tests/Unit/Architecture/ForbiddenFunctionTest.php` and add the following code:
 
-![forbidden function test](assets/forbidden-function-test.png)
+![Forbidden function test](assets/forbidden-function-test.png)
 
 [Full test code](https://gist.github.com/tegos/0fa95dbf5dbce39b969399dd7161921b)
 
@@ -58,7 +58,7 @@ vendor/bin/phpunit --filter 'test_forbidden_functions'
 If test fails it will output a message indicating the file and line number where a forbidden function is used. This
 allows you to quickly navigate to the relevant file in your IDE, such as PhpStorm, and make the necessary corrections.
 
-![test result](assets/test-result.jpg)
+![Test result](assets/test-result.jpg)
 
 ## Conclusion
 
